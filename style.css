@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 90vh;
+  flex-direction: column;
+}
+
+form {
+  max-width: 900px;
+  padding: 20px;
+}
+
+input,
+textarea,
+button {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 0.875rem;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+label {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.message-error {
+  margin-bottom: 16px;
+  color: #e21111;
+  font-family: "inter", sans-serif;
+  font-size: 0.875rem;
+}
+
+.sucess-message{
+  margin-bottom: 16px;
+  color: #1f4186;
+  font-family: "inter", sans-serif;
+  font-size: 0.875rem;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+  background: #2856b0;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1d3d7d;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.4rem;
+    margin-bottom: 32px;
+  }
+  label {
+    font-size: .875rem;
+  }
+input,
+button {
+  height: 40px;
+  margin-bottom: 4px;
+  padding: 10px;
+  font-size: .75rem;
+}
+}
