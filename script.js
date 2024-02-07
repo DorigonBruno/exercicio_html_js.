@@ -10,8 +10,8 @@ function preventSubmit(event) {
 }
 
 function maiorQue() {
-  const campoA = campo1.value;
-  const campoB = campo2.value;
+  const campoA = +campo1.value;
+  const campoB = +campo2.value;
 
   if (campoB > campoA) {
     messageSucess.textContent = `Sucesso ${campoB} é maior que ${campoA}`;
